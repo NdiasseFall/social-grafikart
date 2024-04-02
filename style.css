@@ -29,7 +29,11 @@ header .logo a {
 header nav a {
   padding: 0 25px;
   text-decoration: none;
-  color: #f5f5f5;
+  color: #c4c3c3cb;
+  transition: 0.5s;
+}
+header nav a:hover{
+  color: #fff;
 }
 main {
   width: 100%;
@@ -46,13 +50,6 @@ main {
   height: 100%;
 }
 
-.sideBar li:nth-child(1) {
-  background-color: #fff;
-  border: 1px solid #c4c3c3cb;
-  border-radius: 5px;
-  border: 1px solid #c4c3c3cb;
-  box-shadow: 0 2px #c4c3c3cb;
-}
 .sideBar li {
   display: flex;
   justify-content: flex-start;
@@ -62,11 +59,28 @@ main {
   padding-top: 5px;
   padding-bottom: 5px;
   width: 90%;
+  transition: 0.3s;
+}
+.sideBar li:hover, .active {
+  background-color: #fff;
+  border: 1px solid #c4c3c3cb;
+  border-radius: 5px;
+  border: 1px solid #c4c3c3cb;
+  box-shadow: 0 2px #c4c3c3cb;
 }
 .sideBar li a {
   text-decoration: none;
-  color: #4b4949cb;
+  color: #9c9999cb;
+  transition: .3s;
 }
+.sideBar li:nth-child(1) a{
+  color: #000;
+}
+.sideBar li a:hover, .active{
+  color: #000;
+}
+
+
 .principal {
   display: flex;
   justify-content: center;
